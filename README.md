@@ -10,11 +10,11 @@ The program produces incorrect summaries for some inputs. Find and fix the bug. 
 
 It should:
 
-- Add amounts for each customer.
-- Ignore invalid orders.
-- Return an error if one or more invalid orders are found.
-- Continue processing valid orders after an invalid order.
-- Print:
+- add amounts for each customer
+- ignore invalid orders with no Customer name
+- return an error if one or more invalid orders are found
+- continue processing valid orders after an invalid order
+- print:
 
 ```text
 warning: invalid order for customer ""
