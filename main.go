@@ -9,7 +9,6 @@ type Order struct {
 
 func totalsByCustomer(orders []Order) (map[string]int, error) {
 	totals := make(map[string]int)
-
 	for _, order := range orders {
 		totals[order.Customer] = order.Amount
 	}
@@ -24,6 +23,8 @@ func main() {
 		{Customer: "Bob", Amount: 7},
 		{Customer: "Alice", Amount: 5},
 		{Customer: "", Amount: 20},
+		{Customer: "Alice", Amount: -3},
+		{Amount: -20},
 	}
 
 	totals, _ := totalsByCustomer(orders)
